@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 
-@CucumberOptions(features = "features",tags = "", plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json", "junit:target/cucumber.xml"}, glue = {"stepsdefinitions", "cucumberSetup"})
+@CucumberOptions(features = "features", plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json", "junit:target/cucumber.xml"}, glue = {"stepsdefinitions", "cucumberSetup"})
 @RunWith(Cucumber.class)
 public class RunnerTest  extends AbstractTestNGCucumberTests {
     @Override
