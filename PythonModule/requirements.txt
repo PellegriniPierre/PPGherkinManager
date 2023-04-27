@@ -1,0 +1,9 @@
+selenium
+pytest
+flake8
+webdriver_manager
+behave
+pytest-html
+mock
+PyHamcrest
+wheel
