@@ -1,14 +1,19 @@
 package stepsdefinitions;
 
 import io.cucumber.java.en.Given;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
+import kong.unirest.*;
+
+import java.io.IOException;
+
+import static utils.APIRestClasses.postUrl.postToWordpress;
 
 public class MyStepdefs {
     @Given("I call API")
-    public void iAmAtTheLoginPageAsAnUserOrAdminSuperAdminRole(){
-        Response response = RestAssured.get("http://20.13.162.105:8000/?p=3");
-        System.out.println("Status code = " + response.getStatusCode());
-        System.out.println("Body = "+ response.getBody().prettyPrint());
+    public void iAmAtTheLoginPageAsAnUserOrAdminSuperAdminRole() throws IOException {
+        HttpResponse<JsonNode> response = utils.APIRestClasses.getURL.appelUrl();
+        postToWordpress();
+        System.out.println("Status code = " + response.getStatus());
+        System.out.println("Body = "+ response.getBody());
+        System.out.println("StatusText = " + response.getStatusText());
     }
 }
