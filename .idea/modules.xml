@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaModule.iml" filepath="$PROJECT_DIR$/JavaModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/PythonModule/PythonModule.iml" filepath="$PROJECT_DIR$/PythonModule/PythonModule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/TTCGherkin.iml" filepath="$PROJECT_DIR$/.idea/TTCGherkin.iml" />
     </modules>
   </component>
 </project>

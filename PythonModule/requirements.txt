@@ -7,3 +7,4 @@ pytest-html
 mock
 PyHamcrest
 wheel
+requests
