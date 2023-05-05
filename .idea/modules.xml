@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaModule.iml" filepath="$PROJECT_DIR$/JavaModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/PythonModule/PythonModule.iml" filepath="$PROJECT_DIR$/PythonModule/PythonModule.iml" />
     </modules>
   </component>

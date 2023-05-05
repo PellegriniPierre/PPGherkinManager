@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="c2d24407-b222-4d54-8cb7-659dc7705496" name="wordpress@20.13.162.105 Mapping">
+      <data-sources db="2f52b74d-966b-4c9a-974a-ac396033b351" ddl="8df9eefe-c0c5-4aa7-bc49-4372fbbb7723" />
+      <scope>
+        <node kind="schema" qname="wordpress" />
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="8df9eefe-c0c5-4aa7-bc49-4372fbbb7723" />
+          <option name="name" value="wordpress@20.13.162.105 (DDL)" />
+          <option name="dbmsName" value="MYSQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/JavaModule/src/test/resources/DDL" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

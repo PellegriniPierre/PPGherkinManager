@@ -13,13 +13,9 @@ public class CucumberHooks {
 
     @Before
     public void SetUp() {
-        String browser = System.getProperty("browser");
         ChromeOptions options = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
-        //String ListeVersions = WebDriverManager.chromedriver().getDriverVersions().toString();
-        //System.out.println("ListeVersions = " + ListeVersions);
-        //System.out.println("Browser set to " + browser + " so we are on local mode\n" + "Set Headless(false) within CucumberHooks class to visualise ChromeDriver actions");
-        options.addArguments("--headless=new"); /* Headless permet de ne pas chargé la partie graphique du Webdriver if true si on fait un Maven clean test sur un Jenkins (intégration continue) il faudra mettre true */
+        options.addArguments("--headless=new"); /* Headless permet de ne pas charger la partie graphique du Webdriver if true si on fait un Maven clean test sur un Jenkins (intégration continue) il faudra mettre true */
         options.addArguments("--start-maximized");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("enable-automation");
