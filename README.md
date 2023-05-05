@@ -17,7 +17,7 @@ https://www.selenium.dev/documentation/webdriver/
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 ## Site web à tester:
-#### Wordpress
+#### WordPress
 http://20.13.162.105:8000/
 
 #### Open API
