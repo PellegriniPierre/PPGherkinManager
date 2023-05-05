@@ -28,3 +28,5 @@ https://api.openai.com/v1/audio/translations
 ## Gestion des projets:
 #### Jira URL
 http://20.13.162.105:8080
+
+J'ajoute des elements à l'arrache
