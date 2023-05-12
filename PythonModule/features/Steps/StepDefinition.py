@@ -24,6 +24,7 @@ def step_impl(context):
     header = context.driver.find_element(By.CSS_SELECTOR, '#main > header > h1')
     print(header.text)
     assert header.text == "Boutique"
+    context.driver.quit()
 
 
 @given("I launch a db request")
