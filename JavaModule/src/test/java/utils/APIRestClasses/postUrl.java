@@ -10,8 +10,11 @@ import static utils.Json.JsonUtilities.jsonReplaceJsonDataWithInputData;
 
 public class postUrl {
     public static HttpResponse<JsonNode> postToWordpress() throws IOException {
-        Object body = jsonReplaceJsonDataWithInputData("src/test/resources/JsonTemplates/WordpressAJC/template1.json");
-        return Unirest.post("http://20.13.162.105:8000/?p=3")
+        /* TODO: mapper l'api avec classes + url */
+        String urlPostToWordpress =  "http://20.13.162.105:8000/wp-toto";
+        String pathToTemplate = "src/test/resources/JsonTemplates/WordpressAJC/template1.json";
+        Object body = jsonReplaceJsonDataWithInputData(pathToTemplate);
+        return Unirest.post(urlPostToWordpress)
                 .body(body)
                 .asJson();
     }

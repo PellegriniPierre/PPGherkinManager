@@ -1,13 +1,11 @@
 package sqlConnector;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.sql.*;
 
 public class mariadb {
     public static ResultSet mariadbConnector() throws SQLException {
         String Query = "SELECT * from Users";
-        Connection conn = DriverManager.getConnection("jdbc:mariadb://20.13.162.105:3307/wordpress" + "root" + "somewordpress");
+        Connection conn = DriverManager.getConnection("jdbc:mariadb://20.13.162.105:3307/wordpress/" + "root" + "/somewordpress");
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery(Query);
         while(rs.next()){

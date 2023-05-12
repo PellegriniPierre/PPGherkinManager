@@ -1,12 +1,12 @@
 package cucumberSetup;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import java.time.Duration;
 
 public class CucumberHooks {
     public static WebDriver driver;
@@ -26,8 +26,6 @@ public class CucumberHooks {
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
     }
 
     @After
