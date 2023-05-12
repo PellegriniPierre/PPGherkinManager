@@ -1,4 +1,4 @@
-selenium
+selenium==4.9.1
 pytest
 flake8
 webdriver_manager
@@ -6,5 +6,8 @@ behave
 pytest-html
 mock
 PyHamcrest
+mysql-connector-python
 wheel
-requests
+requests==2.30.0
+
+
