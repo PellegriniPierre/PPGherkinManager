@@ -15,9 +15,13 @@ import java.util.Objects;
 import static utils.APIRestClasses.postUrl.postToWordpress;
 
 public class MyStepdefs {
-    @Given("I do a {string} request to API")
-    public void iAmAtTheLoginPageAsAnUserOrAdminSuperAdminRole(String arg0) throws IOException {
 
+    @Given("I launch a {string} request")
+    public void iLaunchADbRequest( String arg0) throws SQLException, IOException {
+        if(Objects.equals(arg0, "mariadb")){
+            ResultSet resultatDeRequete = mariadb.mariadbConnector();
+            System.out.println(resultatDeRequete);
+        }
         if(Objects.equals(arg0, "get")){
             HttpResponse<JsonNode> response = getUrl.appelUrl();
             System.out.println("Status code = " + response.getStatus());
@@ -30,12 +34,6 @@ public class MyStepdefs {
             System.out.println("Body = "+ response.getBody());
             System.out.println("StatusText = " + response.getStatusText());
         }
-    }
-
-    @Given("I launch a db request")
-    public void iLaunchADbRequest() throws SQLException {
-        ResultSet resultatDeRequete = mariadb.mariadbConnector();
-        System.out.println(resultatDeRequete);
     }
 
     @Given("I check elements on the frontend")
