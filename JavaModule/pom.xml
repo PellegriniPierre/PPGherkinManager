@@ -160,6 +160,11 @@
 			<version>${allure-junit5.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>regions</artifactId>
+			<version>2.20.69</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<testOutputDirectory>${project.build.directory}/classes</testOutputDirectory>

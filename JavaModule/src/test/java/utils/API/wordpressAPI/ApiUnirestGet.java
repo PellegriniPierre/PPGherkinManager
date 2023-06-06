@@ -1,4 +1,4 @@
-package utils.APIRestClasses;
+package utils.API.wordpressAPI;
 
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;

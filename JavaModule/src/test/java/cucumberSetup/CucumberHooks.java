@@ -15,7 +15,7 @@ public class CucumberHooks {
     public void SetUp() {
         ChromeOptions options = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
-        options.addArguments("--headless=new"); /* Headless permet de ne pas charger la partie graphique du Webdriver if true si on fait un Maven clean test sur un Jenkins (intégration continue) il faudra mettre true */
+        //options.addArguments("--headless=new"); // A dé-commenter pour passer en headless
         options.addArguments("--start-maximized");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("enable-automation");

@@ -2,12 +2,17 @@ package utils.Random;
 
 import java.util.Random;
 
-public class Randomisation {
-    public static String RandomWords(){
-        return generateRandomWord(5);
+public class RandomWords {
+    public RandomWords(){
+        getRandomString(6);
+    }
+    private String RandomString;
+
+    public String getRandomString(int lenght){
+        return RandomString;
     }
 
-    public static String generateRandomWord(int length) {
+    public static String setRandomWord(int length) {
         Random random = new Random();
         char[] letters = "abcdefghijklmnopqrstuvwxyz".toCharArray();
         StringBuilder sb = new StringBuilder();

@@ -5,14 +5,14 @@ import io.cucumber.java.en.Given;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import sqlConnector.mariadb;
-import utils.APIRestClasses.getUrl;
+import utils.API.wordpressAPI.getUrl;
 
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import static utils.APIRestClasses.postUrl.postToWordpress;
+import static utils.API.wordpressAPI.postUrl.postToWordpress;
 
 public class MyStepdefs {
 
