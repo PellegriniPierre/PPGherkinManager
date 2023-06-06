@@ -51,3 +51,15 @@ https://levelup.gitconnected.com/setup-ssh-between-jenkins-and-github-e4d7d226b2
 ####
 Doc github setup SSH:
 https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+####
+Reporting JAVA Junit:
+https://www.swtestacademy.com/allure-report-junit/
+
+####
+XPATH help:
+https://www.swtestacademy.com/xpath-selenium/
+
+####
+Getter et setter Java:
+https://codegym.cc/fr/groups/posts/getters-et-setters-en-java
