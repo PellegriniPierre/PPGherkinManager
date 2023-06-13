@@ -4,7 +4,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import seleniumClasses.WebElements.Button;
 import utils.Scenario.ScenarioContext;
 
 import java.util.Objects;
@@ -13,6 +12,8 @@ import static cucumberSetup.CucumberHooks.driver;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static seleniumClasses.URL.WordpressURL.getUrlMonCompte;
+import static seleniumClasses.URL.WordpressURL.getWebSiteURL;
+import static seleniumClasses.WebElements.Button.getDetailAccount;
 
 public class Navigation {
     ScenarioContext scenarioContext;
@@ -34,13 +35,15 @@ public class Navigation {
 
     @Then("My personal account appear")
     public void myPersonalAccountAppear() {
-        WebElement detailAccount = Button.getDetailAccount();
+        String AccountLinkText = getDetailAccount();
+        WebElement detailAccount = driver.findElement(By.linkText(AccountLinkText));
         assertTrue("I am not on My Personal account", detailAccount.isDisplayed());
     }
 
     @Given("I am on the home page")
     public void iAmOnTheHomePage() {
-        driver.get("http://20.13.162.105:8000/");
+        String WebsiteURL = getWebSiteURL();
+        driver.get(WebsiteURL);
     }
 
     @Then("The searching page appear with the result of my search")

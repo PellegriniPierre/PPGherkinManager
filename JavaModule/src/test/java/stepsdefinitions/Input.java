@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import utils.Scenario.ScenarioContext;
 import static cucumberSetup.CucumberHooks.driver;
+import static seleniumClasses.WebElements.Button.getLoginButton2;
 import static utils.Mails.MailGenerator.getRandomMail;
 
 
@@ -33,7 +34,8 @@ public class Input {
     public void iEnterMyLogin() {
         MailGenerator.setRandomMail();
         String Email = getRandomMail();
-        WebElement loginInput = driver.findElement(By.id("reg_email"));
+        String LoginInputText = getLoginButton2();
+        WebElement loginInput = driver.findElement(By.id(LoginInputText));
         System.out.println("Ce mail aléatoire a été généré = " + Email);
         loginInput.sendKeys(Email);
         System.out.println("Le sendkey est ok");
