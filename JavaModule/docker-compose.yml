@@ -9,10 +9,10 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_ROOT_PASSWORD: pjKuj1YAbWGu1resLhjr
       MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_USER: wordpressAdmin
+      MYSQL_PASSWORD: fhVDcYT9ThAKleLg3sas
 
   wordpress:
     depends_on:

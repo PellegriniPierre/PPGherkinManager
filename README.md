@@ -63,3 +63,12 @@ https://www.swtestacademy.com/xpath-selenium/
 ####
 Getter et setter Java:
 https://codegym.cc/fr/groups/posts/getters-et-setters-en-java
+
+####
+Environnements AWS :
+#####
+Commande copilot pour gestion des containers: 
+New-Item -Path 'C:\copilot' -ItemType directory; `
+Invoke-WebRequest -OutFile 'C:\copilot\copilot.exe' https://github.com/aws/copilot-cli/releases/latest/download/copilot-windows.exe
+
+Docker push command :
