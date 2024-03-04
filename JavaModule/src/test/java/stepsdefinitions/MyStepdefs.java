@@ -2,8 +2,7 @@ package stepsdefinitions;
 
 import cucumberSetup.CucumberHooks;
 import io.cucumber.java.en.Given;
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
+import io.restassured.response.Response;
 import sqlConnector.mariadb;
 import utils.APIRestClasses.getUrl;
 
@@ -11,8 +10,6 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
-
-import static utils.APIRestClasses.postUrl.postToWordpress;
 
 public class MyStepdefs {
 
@@ -23,16 +20,15 @@ public class MyStepdefs {
             System.out.println(resultatDeRequete);
         }
         if(Objects.equals(arg0, "get")){
-            HttpResponse<JsonNode> response = getUrl.appelUrl();
-            System.out.println("Status code = " + response.getStatus());
+            Response response = getUrl.appelUrlInexistante();
             System.out.println("Body = "+ response.getBody());
-            System.out.println("StatusText = " + response.getStatusText());
+            System.out.println("StatusText = " + response);
         }
         if(Objects.equals(arg0, "post")){
-            HttpResponse<JsonNode> response = postToWordpress();
-            System.out.println("Status code = " + response.getStatus());
+            Response response = getUrl.appelUrlInexistante();
+            System.out.println("Status code = " + response.andReturn());
             System.out.println("Body = "+ response.getBody());
-            System.out.println("StatusText = " + response.getStatusText());
+            System.out.println("StatusText = " + response.andReturn());
         }
     }
 
