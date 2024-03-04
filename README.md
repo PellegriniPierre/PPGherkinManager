@@ -1,6 +1,6 @@
 # TTCGherkinManager
 
-Projet pour la formation AJC session Mars 2023
+Projet pour la formation AJC session Mars et Decembre 2023
 ## En python:
 ### Librairies et frameworks
 https://behave.readthedocs.io/en/latest/behave.html
