@@ -1,4 +1,4 @@
-# TTCGherkinManager
+# PPGherkinManager
 
 Projet pour la formation AJC session Mars et Decembre 2023
 ## En python:
@@ -18,7 +18,7 @@ https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 ## Site web à tester:
 #### WordPress
-http://20.13.162.105:8000/
+Todo
 
 #### Open API
 https://api.openai.com/v1/images/generations
@@ -27,11 +27,11 @@ https://api.openai.com/v1/audio/translations
 
 ## Gestion des projets:
 #### Jira URL
-http://20.13.162.105:8080
+Todo
 
 ## CI / CD:
 #### Jenkins URL
-http://20.13.162.105:8081
+Todo
 
 #### Jenkins configuration
 https://github.com/jenkinsci/github-branch-source-plugin/blob/master/docs/github-app.adoc
