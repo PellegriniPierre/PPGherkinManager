@@ -8,6 +8,6 @@ mock
 PyHamcrest
 mysql-connector-python
 wheel
-requests==2.32.0
+requests==2.33.0
 
 
